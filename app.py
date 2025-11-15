@@ -30,7 +30,7 @@ result_lookup = {'takeyoursobstory': ['Claire', 'https://youtu.be/7Ec3zIyt4Yg'],
                 'whatsyourfavouritecolour': ['Lucy', 'https://media1.tenor.com/m/U7_-hprcYqoAAAAC/buddy-buddy-the-elf.gif'], #Holly
                 'suitsyou': ['Charlie', 'https://media1.tenor.com/m/VYNmmNbag84AAAAd/santa-kitty.gif']} #Millie
 
-user_code = st.text_input('Enter your secret code...all lower case... ')
+user_code = st.text_input('Enter your secret code...all lower case... ').lower()
 
 if user_code == 'takeyoursobstory':
     st.video(result_lookup[user_code][1])
