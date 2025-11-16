@@ -30,7 +30,9 @@ result_lookup = {'takeyoursobstory': ['Claire', 'https://youtu.be/7Ec3zIyt4Yg', 
                 'whatsyourfavouritecolour': ['Lucy', 'https://media1.tenor.com/m/U7_-hprcYqoAAAAC/buddy-buddy-the-elf.gif', 'Holly'], 
                 'suitsyou': ['Charlie', 'https://media1.tenor.com/m/VYNmmNbag84AAAAd/santa-kitty.gif', 'Millie']}
 
-user_code = st.text_input('Enter your secret code...').lower()
+all_of_us = ['aaron', 'david', 'keith', 'claire', 'angela', 'eric', 'aisling', 'jen', 'marcelina', 'leon', 'charlie', 'lucy', 'holly', 'millie']
+
+user_code = st.text_input('Enter the code you were sent in your whatsapp message...').lower()
 
 if user_code == 'takeyoursobstory':
     st.video(result_lookup[user_code][1])
@@ -42,7 +44,6 @@ if user_code == 'takeyoursobstory':
     st.write('🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 ')
     st.write(f'🎁 🎁 🎁 ............ {result_lookup[user_code][0]}! ........... 🎁🎁 🎁')
     st.write(' 🤶 🤶 🤶 🤶 🤶 🤶 🤶 🤶 🤶 🤶 🤶 🤶 🤶 🤶 ')
-
 if user_code in result_lookup.keys() and user_code!= 'takeyoursobstory':
     st.markdown(f"![Alt Text]({result_lookup[user_code][1]})")
     st.write('🎅 🎅 🎅 🎅 🎅 🎅 🎅 🎅 🎅 🎅 🎅 🎅 🎅 🎅 ')
@@ -53,8 +54,6 @@ if user_code in result_lookup.keys() and user_code!= 'takeyoursobstory':
     st.write('🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 ')
     st.write(f'🎁 🎁 🎁 ............ {result_lookup[user_code][0]}! ........... 🎁🎁 🎁')
     st.write(' 🤶 🤶 🤶 🤶 🤶 🤶 🤶 🤶 🤶 🤶 🤶 🤶 🤶 🤶 ')
-
-
-if user_code in ['Aaron', 'David', 'Keith', 'Claire', 'Angela', 'Eric', 'Aisling', 'Jen', 'Marcelina', 'Leon', 'Charlie', 'Lucy', 'Holly', 'Millie']:
+if user_code in all_of_us:
     st.markdown('Names won\'t work ... you have to use the code you were sent.')
     st.markdown('If you\'re trying to check who someone else got, stop cheating! Especially you mam.')
