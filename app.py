@@ -12,8 +12,11 @@ st.set_page_config(page_title="Secret Santa Christmas 2026", page_icon="🎄")
 # Run snowfall animation
 run_snow_animation()
 
-st.header(f"🎅 🤶 Secret Santa 2026- Who'd you get?! ⛄🎄", anchor=False)
-st.markdown("![Alt Text](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjB3b2FodmRjNW5tdWhsZGtzdWozZGlhbmF4NmtoZGZubnJseGtrYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/HBMCmtsPEUShG/giphy.gif)")
+# st.header(f"🎅 🤶 Secret Santa 2026- Who'd you get?! ⛄🎄", anchor=False)
+st.header(f"🎅 🤶 ⛄🎄", anchor=False)
+
+st.markdown("![Alt Text](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeW1laXp6MnIxM3lhcW50bzJhNjdsaXhndGtqY2NmcmhnNDJ0dWpscSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/nIIBglp9W7pBt6qGi3/giphy.gif)")
+st.video('https://www.youtube.com/watch?v=yXQViqx6GMY')
 
 result_lookup = {'takeyoursobstory': ['Claire', 'https://youtu.be/7Ec3zIyt4Yg', 'Aaron'],
                 'noneedforthat': ['Angela', "https://media1.tenor.com/m/Guu-fazdXi4AAAAd/merry-christmas-2024.gif", 'David'], 
