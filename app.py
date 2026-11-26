@@ -47,7 +47,8 @@ if user_code == 'takeyoursobstory':
     st.write(f'🎁 🎁 🎁 ............ {result_lookup[user_code][0]}! ........... 🎁🎁 🎁')
     st.write(' 🤶 🤶 🤶 🤶 🤶 🤶 🤶 🤶 🤶 🤶 🤶 🤶 🤶 🤶 ')
 if user_code in result_lookup.keys() and user_code!= 'takeyoursobstory':
-    st.image(f"({result_lookup[user_code][1]})")
+    img_url = {result_lookup[user_code][1]}
+    st.image(img_url)
     st.write('🎅 🎅 🎅 🎅 🎅 🎅 🎅 🎅 🎅 🎅 🎅 🎅 🎅 🎅 ')
     st.write(f'🎁   ..... Hey {result_lookup[user_code][2]}, you are gifting to ....... 🎁  ')
     st.write('🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 ')
