@@ -33,7 +33,7 @@ result_lookup = {'takeyoursobstory': ['Claire', 'https://youtu.be/7Ec3zIyt4Yg', 
                 'grinchoff': ['Millie', 'https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExaG90Nmd0cWpxaTg2bnA1NnRrcDJodjZycnZ0ZDgxaXhndTMxcXJ2YiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/BqlIdB0bL02vGSt4Vu/giphy.gif', 'Charlie'], 
                 'whichsideout': ['Leon', 'https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaDRwa2pncTR4bW8ydmduYzRpZnNzbzNjcmVzbDRtN3hwYXdvNjdjZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Y4PUPG0d2In8bimcIm/giphy.gif', 'Lucy'],
                 'whatsyourfavouritecolour': ['Lucy', 'https://media1.tenor.com/m/U7_-hprcYqoAAAAC/buddy-buddy-the-elf.gif', 'Holly'], 
-                'suitsyou': ['Charlie', 'https://media1.tenor.com/m/VYNmmNbag84AAAAd/santa-kitty.gif', 'Millie']}
+                'suitsyou': ['Charlie', 'https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2FodWJieDZvejJwNDkxcm0wNHowcGFrZWJobmZkbjQ3c2xjdG05eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/KyXefl39CoZWWj21w1/giphy.gif', 'Millie']}
 
 all_of_us = ['aaron', 'david', 'keith', 'claire', 'angela', 'eric', 'aisling', 'jen', 'leon', 'charlie', 'lucy', 'holly', 'millie']
 
