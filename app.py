@@ -3,14 +3,16 @@ from streamlit_extras.let_it_rain import rain
 import random
 
 # Function to apply snowfall effect
-def run_snow_animation():
-    rain(emoji="❄️", font_size=20, falling_speed=5, animation_length="infinite")
+# def run_snow_animation():
+#     rain(emoji="❄️", font_size=20, falling_speed=5, animation_length="infinite")
+
+st.snow()
 
 # Page configuration
 st.set_page_config(page_title="Secret Santa Christmas 2026", page_icon="🎄")
 
 # Run snowfall animation
-run_snow_animation()
+# run_snow_animation()
 
 left_co, cent_co,last_co = st.columns(3)
 with cent_co:
