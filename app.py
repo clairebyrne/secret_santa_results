@@ -7,31 +7,97 @@ st.snow()
 
 # Page configuration
 st.set_page_config(page_title="Secret Santa Christmas 2026", page_icon="🎄")
+# CSS to keep items in a single row on mobile and style the boxes
+st.markdown(
+    """
+    <style>
+    .countdown-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8px;
+        width: 100%;
+        max-width: 500px;
+        margin: 20px auto;
+    }
+    .time-box {
+        flex: 1;
+        background-color: #165B33;
+        color: #FFFFFF;
+        border: 2px solid #BB2528;
+        border-radius: 10px;
+        padding: 12px 4px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .time-val {
+        font-size: clamp(1.5rem, 6vw, 2.5rem);
+        font-weight: 800;
+        line-height: 1.1;
+        font-variant-numeric: tabular-nums;
+    }
+    .time-label {
+        font-size: clamp(0.65rem, 2.5vw, 0.85rem);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-top: 4px;
+        color: #F8B229;
+        font-weight: 600;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
 
-@st.fragment(run_every=1)
-def live_countdown():
-    now = datetime.now()
-    # Target Dec 25 of the current year (or next year if past Dec 25)
-    target_year = now.year if (now.month, now.day) <= (12, 25) else now.year + 1
-    christmas = datetime(target_year, 12, 25, 0, 0, 0)
-    
-    remaining = christmas - now
-    
-    if remaining.total_seconds() <= 0:
-        st.balloons()
-        st.header("🎅 Merry Christmas! 🎁")
-    else:
-        days = remaining.days
-        hours, remainder = divmod(remaining.seconds, 3600)
-        minutes, seconds = divmod(remainder, 60)
-        
-        col1, col2, col3, col4 = st.columns(4)
-        col1.metric("Days", days)
-        col2.metric("Hours", f"{hours:02d}")
-        col3.metric("Minutes", f"{minutes:02d}")
-        col4.metric("Seconds", f"{seconds:02d}")
+st.title("🎄 Christmas Countdown")
 
-live_countdown()
+
+@st.fragment(run_every="1s")
+def show_countdown():
+  now = datetime.now()
+  christmas = datetime(now.year, 12, 25, 0, 0, 0)
+
+  # If Christmas has passed this year, target next year
+  if now > christmas:
+    christmas = datetime(now.year + 1, 12, 25, 0, 0, 0)
+
+  diff = christmas - now
+
+  if diff.total_seconds() <= 0:
+    st.success("🎅 Merry Christmas!")
+    return
+
+  days = diff.days
+  hours, remainder = divmod(diff.seconds, 3600)
+  minutes, seconds = divmod(remainder, 60)
+
+  st.markdown(
+      f"""
+        <div class="countdown-container">
+            <div class="time-box">
+                <div class="time-val">{days:02d}</div>
+                <div class="time-label">Days</div>
+            </div>
+            <div class="time-box">
+                <div class="time-val">{hours:02d}</div>
+                <div class="time-label">Hours</div>
+            </div>
+            <div class="time-box">
+                <div class="time-val">{minutes:02d}</div>
+                <div class="time-label">Mins</div>
+            </div>
+            <div class="time-box">
+                <div class="time-val">{seconds:02d}</div>
+                <div class="time-label">Secs</div>
+            </div>
+        </div>
+        """,
+      unsafe_allow_html=True,
+  )
+
+
+show_countdown()
 
 left_co, cent_co,last_co = st.columns(3)
 with cent_co:
