@@ -1,18 +1,37 @@
 import streamlit as st
 from streamlit_extras.let_it_rain import rain
 import random
-
-# Function to apply snowfall effect
-# def run_snow_animation():
-#     rain(emoji="❄️", font_size=20, falling_speed=5, animation_length="infinite")
+from datetime import datetime
 
 st.snow()
 
 # Page configuration
 st.set_page_config(page_title="Secret Santa Christmas 2026", page_icon="🎄")
 
-# Run snowfall animation
-# run_snow_animation()
+@st.fragment(run_every=1)
+def live_countdown():
+    now = datetime.now()
+    # Target Dec 25 of the current year (or next year if past Dec 25)
+    target_year = now.year if (now.month, now.day) <= (12, 25) else now.year + 1
+    christmas = datetime(target_year, 12, 25, 0, 0, 0)
+    
+    remaining = christmas - now
+    
+    if remaining.total_seconds() <= 0:
+        st.balloons()
+        st.header("🎅 Merry Christmas! 🎁")
+    else:
+        days = remaining.days
+        hours, remainder = divmod(remaining.seconds, 3600)
+        minutes, seconds = divmod(remainder, 60)
+        
+        col1, col2, col3, col4 = st.columns(4)
+        col1.metric("Days", days)
+        col2.metric("Hours", f"{hours:02d}")
+        col3.metric("Minutes", f"{minutes:02d}")
+        col4.metric("Seconds", f"{seconds:02d}")
+
+live_countdown()
 
 left_co, cent_co,last_co = st.columns(3)
 with cent_co:
