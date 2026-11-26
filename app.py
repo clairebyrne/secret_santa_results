@@ -17,17 +17,13 @@ with cent_co:
     # st.image(logo)
     st.image("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeW1laXp6MnIxM3lhcW50bzJhNjdsaXhndGtqY2NmcmhnNDJ0dWpscSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/nIIBglp9W7pBt6qGi3/giphy.gif")
 
-st.header(f"🎅🤶 Secret Santa 2026- Who'd you get?! ⛄🎄", anchor=False)
+st.header(f"🎅 Secret Santa 2026- Who'd you get?! 🤶", anchor=False)
 
 st.markdown('# Gifting theme:')
 st.markdown('Inspired by sheep. Wool? Fleece? White and fluffy? has a sheep on it?! What a bleatin joke ... ')
 left_co, cent_co,last_co = st.columns(3)
 with cent_co:
     st.image('https://images.cartoonstock.com/lowres_800/seasonal-celebrations-nativity-nativity_scene-christian-christianity-fleece-dren2799_low.jpg')
-
-left_co, cent_co,last_co = st.columns(3)
-with cent_co:
-    st.video('https://www.youtube.com/watch?v=yXQViqx6GMY', autoplay=True, muted=True)
 
 # user_code: from, to, media
 result_lookup = {'buttcracker': ['Aaron', 'Keith', 'https://b3666184.assetcdn.net/2.0/3666184/wp-content/uploads/2025/12/christmas-comics-18-12-19-2025.webp?lossy=2&strip=1&webp=1'], 
@@ -72,3 +68,7 @@ if user_code in result_lookup.keys() and user_code!= 'christmasregrets':
 if user_code in all_of_us:
     st.markdown('Names won\'t work ... you have to use the code you were sent.')
     st.markdown('If you\'re trying to check who someone else got, stop cheating! Especially you mam.')
+
+left_co, cent_co,last_co = st.columns(3)
+with cent_co:
+    st.video('https://www.youtube.com/watch?v=yXQViqx6GMY', autoplay=True, muted=True)
