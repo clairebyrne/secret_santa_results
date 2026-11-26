@@ -15,8 +15,11 @@ run_snow_animation()
 # st.header(f"🎅 🤶 Secret Santa 2026- Who'd you get?! ⛄🎄", anchor=False)
 st.header(f"🎅 🤶 ⛄🎄 🤶 🎅", anchor=False)
 
-st.image("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeW1laXp6MnIxM3lhcW50bzJhNjdsaXhndGtqY2NmcmhnNDJ0dWpscSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/nIIBglp9W7pBt6qGi3/giphy.gif")
-st.video('https://www.youtube.com/watch?v=yXQViqx6GMY', autoplay=True, muted=True)
+left_co, cent_co,last_co = st.columns(3)
+with cent_co:
+    # st.image(logo)
+    st.image("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeW1laXp6MnIxM3lhcW50bzJhNjdsaXhndGtqY2NmcmhnNDJ0dWpscSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/nIIBglp9W7pBt6qGi3/giphy.gif")
+    st.video('https://www.youtube.com/watch?v=yXQViqx6GMY', autoplay=True, muted=True)
 
 result_lookup = {'takeyoursobstory': ['Claire', 'https://youtu.be/7Ec3zIyt4Yg', 'Aaron'],
                 'noneedforthat': ['Angela', "https://media1.tenor.com/m/Guu-fazdXi4AAAAd/merry-christmas-2024.gif", 'David'], 
