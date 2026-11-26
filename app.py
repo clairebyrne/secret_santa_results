@@ -12,15 +12,21 @@ st.set_page_config(page_title="Secret Santa Christmas 2026", page_icon="🎄")
 # Run snowfall animation
 run_snow_animation()
 
-st.header(f"🎅 🤶 Secret Santa 2026- Who'd you get?! ⛄🎄", anchor=False)
-# st.header(f"🎅 🤶 ⛄🎄 🤶 🎅", anchor=False)
-
-st.markdown('# Gifting theme: inspired by sheep')
-
 left_co, cent_co,last_co = st.columns(3)
 with cent_co:
     # st.image(logo)
     st.image("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeW1laXp6MnIxM3lhcW50bzJhNjdsaXhndGtqY2NmcmhnNDJ0dWpscSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/nIIBglp9W7pBt6qGi3/giphy.gif")
+
+st.header(f"🎅🤶 Secret Santa 2026- Who'd you get?! ⛄🎄", anchor=False)
+
+st.markdown('# Gifting theme:')
+st.markdown('Inspired by sheep. Wool? Fleece? White and fluffy? has a sheep on it?! What a bleatin joke ... ')
+left_co, cent_co,last_co = st.columns(3)
+with cent_co:
+    st.image('https://images.cartoonstock.com/lowres_800/seasonal-celebrations-nativity-nativity_scene-christian-christianity-fleece-dren2799_low.jpg')
+
+left_co, cent_co,last_co = st.columns(3)
+with cent_co:
     st.video('https://www.youtube.com/watch?v=yXQViqx6GMY', autoplay=True, muted=True)
 
 # user_code: from, to, media
