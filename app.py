@@ -47,7 +47,7 @@ if user_code == 'takeyoursobstory':
     st.write(f'🎁 🎁 🎁 ............ {result_lookup[user_code][0]}! ........... 🎁🎁 🎁')
     st.write(' 🤶 🤶 🤶 🤶 🤶 🤶 🤶 🤶 🤶 🤶 🤶 🤶 🤶 🤶 ')
 if user_code in result_lookup.keys() and user_code!= 'takeyoursobstory':
-    st.markdown(f"![Alt Text]({result_lookup[user_code][1]})")
+    st.markdown(f"({result_lookup[user_code][1]})")
     st.write('🎅 🎅 🎅 🎅 🎅 🎅 🎅 🎅 🎅 🎅 🎅 🎅 🎅 🎅 ')
     st.write(f'🎁   ..... Hey {result_lookup[user_code][2]}, you are gifting to ....... 🎁  ')
     st.write('🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 ')
