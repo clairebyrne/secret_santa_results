@@ -21,19 +21,19 @@ with cent_co:
     st.image("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeW1laXp6MnIxM3lhcW50bzJhNjdsaXhndGtqY2NmcmhnNDJ0dWpscSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/nIIBglp9W7pBt6qGi3/giphy.gif")
     st.video('https://www.youtube.com/watch?v=yXQViqx6GMY', autoplay=True, muted=True)
 
-result_lookup = {'takeyoursobstory': ['Claire', 'https://youtu.be/7Ec3zIyt4Yg', 'Aaron'],
-                'noneedforthat': ['Angela', "https://media1.tenor.com/m/Guu-fazdXi4AAAAd/merry-christmas-2024.gif", 'David'], 
-                'turkeyontheside': ['Jen', 'https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3RwcTJjY2F6NW9haGJvemxvdmlleTNycGV3ZmVpOTZodWxudDU4MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RlkxV4vKnKqtXLj2qw/giphy.gif', 'Keith'], 
+result_lookup = {'buttcracker': ['Claire', 'https://b3666184.assetcdn.net/2.0/3666184/wp-content/uploads/2025/12/christmas-comics-18-12-19-2025.webp?lossy=2&strip=1&webp=1', 'Aaron'], #updated
+                'pigsinblankets': ['Angela', "https://m.media-amazon.com/images/I/81t9xBz8ZwL._AC_SX679_.jpg", 'David'], #updated 
+                'ohbless': ['Jen', 'https://m.media-amazon.com/images/I/710uiJrgGBL._AC_SX679_.jpg', 'Keith'], 
                 'santascoming': ['Eric', 'https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdTZlYXpxZHM4N3lremdrZTR3bzZ6bWxib2h4OWlkcWt4OXVseTlyNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LBAv3HJDl2WwU/giphy.gif', 'Claire'],
-                'giveusahand': ['Marcelina', 'https://media1.tenor.com/m/kYTF8A-XkYcAAAAd/snowman-dog.gif', 'Mam'], 
-                'whatapup': ['Aaron', 'https://media1.tenor.com/m/B-DElu_sxdoAAAAd/atv-sledding-pupper-atv.gif', 'Dad'],
-                'wouldyoulook': ['Keith', 'https://firebox.com/blog/wp-content/uploads/2022/10/2pf7wi.jpg', 'Aisling'], 
-                'wellthatsdisturbing': ['David', 'https://firebox.com/blog/wp-content/uploads/2022/10/giphy-16.gif', 'Jen'],
+                'crafty': ['Marcelina', 'https://img.boredpanda.com/unsafe/rs:fit:750:0/q:70/aHR0cHM6Ly9zdGF0aWMuYm9yZWRwYW5kYS5jb20vYmxvZy93cC1jb250ZW50L3VwbG9hZHMvMjAyNS8xMC9JTUdfMDg3OC02OGVhM2Q3ZDZhYTc3LWpwZWdfXzcwMC5qcGc.webp', 'Mam'], #updated 
+                'whishtnow': ['Aaron', 'https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXJjbXFyd3h4aXNsZGlnMGJtbjV4NXJuZmNzanp2MjJhdDUwcnEzbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1ewxD9vhchcigshopy/giphy.gif', 'Dad'], #updated
+                'reelitin': ['Keith', 'https://media1.tenor.com/m/-Mf8ULUx3Q8AAAAd/fishing-gone-fishing.gif', 'Aisling'], #updated
+                'pilesofstars': ['David', 'https://warandpeas.com/wp-content/uploads/2017/12/war-and-peas-christmas-tree.jpg', 'Jen'], #updated
                 'whosaminion': ['Holly', 'https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExOTllOGxqMXg1dXR2emtvaTZ0OG9tYnNpc21rM3llNmQ4N2N1dGc1eiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9w475hDWEPVlu/giphy.gif', 'Leon'], 
-                'grinchoff': ['Millie', 'https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExaG90Nmd0cWpxaTg2bnA1NnRrcDJodjZycnZ0ZDgxaXhndTMxcXJ2YiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/BqlIdB0bL02vGSt4Vu/giphy.gif', 'Charlie'], 
-                'whichsideout': ['Leon', 'https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaDRwa2pncTR4bW8ydmduYzRpZnNzbzNjcmVzbDRtN3hwYXdvNjdjZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Y4PUPG0d2In8bimcIm/giphy.gif', 'Lucy'],
+                'mangawha': ['Millie', 'https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExaG90Nmd0cWpxaTg2bnA1NnRrcDJodjZycnZ0ZDgxaXhndTMxcXJ2YiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/BqlIdB0bL02vGSt4Vu/giphy.gif', 'Charlie'], #updated 
+                'isthatpretzelorhisfuturewife': ['Leon', 'https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZTV2OWJmcjBjaHU3bmY5b3dpb3F2MTBzZHVuanR3ZnByMnhseGFxZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/99kKoxEgOWMIBF3iOk/giphy.gif', 'Lucy'], #updated
                 'whatsyourfavouritecolour': ['Lucy', 'https://media1.tenor.com/m/U7_-hprcYqoAAAAC/buddy-buddy-the-elf.gif', 'Holly'], 
-                'suitsyou': ['Charlie', 'https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2FodWJieDZvejJwNDkxcm0wNHowcGFrZWJobmZkbjQ3c2xjdG05eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/KyXefl39CoZWWj21w1/giphy.gif', 'Millie']}
+                'sleighbellsring': ['Charlie', 'https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2FodWJieDZvejJwNDkxcm0wNHowcGFrZWJobmZkbjQ3c2xjdG05eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/KyXefl39CoZWWj21w1/giphy.gif', 'Millie']} #updated
 
 all_of_us = ['aaron', 'david', 'keith', 'claire', 'angela', 'eric', 'aisling', 'jen', 'leon', 'charlie', 'lucy', 'holly', 'millie']
 
