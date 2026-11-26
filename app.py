@@ -15,7 +15,7 @@ run_snow_animation()
 # st.header(f"🎅 🤶 Secret Santa 2026- Who'd you get?! ⛄🎄", anchor=False)
 st.header(f"🎅 🤶 ⛄🎄 🤶 🎅", anchor=False)
 
-st.markdown("![Alt Text](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeW1laXp6MnIxM3lhcW50bzJhNjdsaXhndGtqY2NmcmhnNDJ0dWpscSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/nIIBglp9W7pBt6qGi3/giphy.gif)")
+st.image("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeW1laXp6MnIxM3lhcW50bzJhNjdsaXhndGtqY2NmcmhnNDJ0dWpscSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/nIIBglp9W7pBt6qGi3/giphy.gif")
 st.video('https://www.youtube.com/watch?v=yXQViqx6GMY', autoplay=True, muted=True)
 
 result_lookup = {'takeyoursobstory': ['Claire', 'https://youtu.be/7Ec3zIyt4Yg', 'Aaron'],
