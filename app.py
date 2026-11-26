@@ -7,6 +7,7 @@ st.snow()
 
 # Page configuration
 st.set_page_config(page_title="Secret Santa Christmas 2026", page_icon="🎄")
+
 # CSS to keep items in a single row on mobile and style the boxes
 st.markdown(
     """
@@ -49,8 +50,6 @@ st.markdown(
     """,
     unsafe_allow_html=True,
 )
-
-st.title("🎄 Christmas Countdown")
 
 
 @st.fragment(run_every="1s")
