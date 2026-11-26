@@ -29,17 +29,17 @@ result_lookup = {'buttcracker': ['Claire', 'https://b3666184.assetcdn.net/2.0/36
                 'whishtnow': ['Aaron', 'https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXJjbXFyd3h4aXNsZGlnMGJtbjV4NXJuZmNzanp2MjJhdDUwcnEzbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1ewxD9vhchcigshopy/giphy.gif', 'Dad'], #updated
                 'reelitin': ['Keith', 'https://media1.tenor.com/m/-Mf8ULUx3Q8AAAAd/fishing-gone-fishing.gif', 'Aisling'], #updated
                 'pilesofstars': ['David', 'https://warandpeas.com/wp-content/uploads/2017/12/war-and-peas-christmas-tree.jpg', 'Jen'], #updated
-                'whosaminion': ['Holly', 'https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExOTllOGxqMXg1dXR2emtvaTZ0OG9tYnNpc21rM3llNmQ4N2N1dGc1eiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9w475hDWEPVlu/giphy.gif', 'Leon'], 
-                'mangawha': ['Millie', 'https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExaG90Nmd0cWpxaTg2bnA1NnRrcDJodjZycnZ0ZDgxaXhndTMxcXJ2YiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/BqlIdB0bL02vGSt4Vu/giphy.gif', 'Charlie'], #updated 
+                'spideychristmas': ['Holly', 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c405972b-1540-4ed9-af40-b157bea4bb53/deww8gw-2ca407d4-3ccb-432a-a4a4-865fb17a2b65.png/v1/fill/w_894,h_894,q_70,strp/spider_man_wishes_you_a_merry_christmas__by_aurteloess_deww8gw-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiIvZi9jNDA1OTcyYi0xNTQwLTRlZDktYWY0MC1iMTU3YmVhNGJiNTMvZGV3dzhndy0yY2E0MDdkNC0zY2NiLTQzMmEtYTRhNC04NjVmYjE3YTJiNjUucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.6F8tqpRs8wrsB0EvVVAXDGxZns-2GfiNjs5421CxKww', 'Leon'], 
+                'mangaxmas': ['Millie', 'https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExaG90Nmd0cWpxaTg2bnA1NnRrcDJodjZycnZ0ZDgxaXhndTMxcXJ2YiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/BqlIdB0bL02vGSt4Vu/giphy.gif', 'Charlie'], #updated 
                 'isthatpretzelorhisfuturewife': ['Leon', 'https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZTV2OWJmcjBjaHU3bmY5b3dpb3F2MTBzZHVuanR3ZnByMnhseGFxZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/99kKoxEgOWMIBF3iOk/giphy.gif', 'Lucy'], #updated
-                'whatsyourfavouritecolour': ['Lucy', 'https://media1.tenor.com/m/U7_-hprcYqoAAAAC/buddy-buddy-the-elf.gif', 'Holly'], 
+                'christmasregrets': ['Lucy', 'https://www.youtube.com/watch?v=HePQnzc-Vto', 'Holly'], 
                 'sleighbellsring': ['Charlie', 'https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2FodWJieDZvejJwNDkxcm0wNHowcGFrZWJobmZkbjQ3c2xjdG05eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/KyXefl39CoZWWj21w1/giphy.gif', 'Millie']} #updated
 
 all_of_us = ['aaron', 'david', 'keith', 'claire', 'angela', 'eric', 'aisling', 'jen', 'leon', 'charlie', 'lucy', 'holly', 'millie']
 
 user_code = st.text_input('Enter the code you were sent in your whatsapp message...').lower()
 
-if user_code == 'takeyoursobstory':
+if user_code == 'christmasregrets':
     st.video(result_lookup[user_code][1])
     st.write('🎅 🎅 🎅 🎅 🎅 🎅 🎅 🎅 🎅 🎅 🎅 🎅 🎅 🎅 ')
     st.write(f'🎁   ..... Hey {result_lookup[user_code][2]}, you are gifting to ....... 🎁  ')
@@ -49,7 +49,7 @@ if user_code == 'takeyoursobstory':
     st.write('🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 ')
     st.write(f'🎁 🎁 🎁 ............ {result_lookup[user_code][0]}! ........... 🎁🎁 🎁')
     st.write(' 🤶 🤶 🤶 🤶 🤶 🤶 🤶 🤶 🤶 🤶 🤶 🤶 🤶 🤶 ')
-if user_code in result_lookup.keys() and user_code!= 'takeyoursobstory':
+if user_code in result_lookup.keys() and user_code!= 'christmasregrets':
     img_url = {result_lookup[user_code][1]}
     st.image(img_url)
     st.write('🎅 🎅 🎅 🎅 🎅 🎅 🎅 🎅 🎅 🎅 🎅 🎅 🎅 🎅 ')
