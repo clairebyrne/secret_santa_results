@@ -27,7 +27,7 @@ result_lookup = {'takeyoursobstory': ['Claire', 'https://youtu.be/7Ec3zIyt4Yg', 
                 'wouldyoulook': ['Keith', 'https://firebox.com/blog/wp-content/uploads/2022/10/2pf7wi.jpg', 'Aisling'], 
                 'wellthatsdisturbing': ['David', 'https://firebox.com/blog/wp-content/uploads/2022/10/giphy-16.gif', 'Jen'],
                 'whosaminion': ['Holly', 'https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExOTllOGxqMXg1dXR2emtvaTZ0OG9tYnNpc21rM3llNmQ4N2N1dGc1eiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9w475hDWEPVlu/giphy.gif', 'Leon'], 
-                'grinchoff': ['Millie', 'https://media.tenor.com/S8fkU5FEppoAAAAj/sportsmanias-emoji.gif', 'Charlie'], 
+                'grinchoff': ['Millie', 'https://giphy.com/embed/BqlIdB0bL02vGSt4Vu', 'Charlie'], 
                 'whichsideout': ['Leon', 'https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaDRwa2pncTR4bW8ydmduYzRpZnNzbzNjcmVzbDRtN3hwYXdvNjdjZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Y4PUPG0d2In8bimcIm/giphy.gif', 'Lucy'],
                 'whatsyourfavouritecolour': ['Lucy', 'https://media1.tenor.com/m/U7_-hprcYqoAAAAC/buddy-buddy-the-elf.gif', 'Holly'], 
                 'suitsyou': ['Charlie', 'https://media1.tenor.com/m/VYNmmNbag84AAAAd/santa-kitty.gif', 'Millie']}
